@@ -1,0 +1,63 @@
+{
+  "name": "SimpleTranslator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "several",
+    "url": "https://github.com/1985lxw/SimpleTranslator.git"
+  },
+  "contributors": [
+    {
+      "name": "Cindy Mei",
+      "email": "cymei@umass.edu",
+      "githubUser": "cinzm13"
+    },
+    {
+      "name": "Xing-Wei Lee",
+      "email": "xingweilee@umass.edu",
+      "githubUser": "1985lxw"
+    },
+    {
+      "name": "Sehwa Hong",
+      "email": "sehwahong@umass.edu",
+      "githubUser": "SehwaHong"
+    },
+    {
+      "name": "Yan Henadzyevich Mazheika",
+      "email": "ymazheika@umass.edu",
+      "githubUser": "mcyanny"
+    }
+  ],
+  "scripts": {
+    "dev": "",
+    "start": "node ./src/server/server.js",
+    "validate-html": "html-validate 'src/**/*.html'",
+    "prettier": "prettier src —write"
+  },
+  "devDependencies": {
+    "html-validate": "^8.18.2",
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "pouchdb": "^8.0.1",
+    "pouchdb-find": "^8.0.1"
+  }
+}

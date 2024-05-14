@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Milestone_2</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script type="module" src="script.js" defer></script>
+    <style>
+        body {
+            font-family: "Sofia", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="game.html" class="game_id">Matching Game</a></li>
+                <li><a href="history.html" class="history_id">History</a></li>
+            </ul>
+        </nav>
+    </header>
+    <input type="checkbox" id="switch" />
+    <label for="switch">Toggle</label>
+    <div id="title" class="title">SimpleTranslator</div>
+    <div class="translator-container">
+        <!-- Language Selection Dropdowns -->
+        <ul class="language-choices" id="language-choices">
+          <li>
+              <select id="lang-in-select"></select> <!-- Added ID for easier reference -->
+          </li>
+          <button id="language-switch-button" class="language-switch-button">
+              <li class="bx bx-transfer"></li>
+          </button>
+          <li>
+              <select id="lang-out-select"></select> <!-- Added ID for easier reference -->
+          </li>
+        </ul>
+
+        <div class="input-output-container">
+            <div class="translator-input">
+                <textarea id="input-textbox" placeholder="Type text to translate" style="resize: none"></textarea>
+            </div>
+            <div class="translator-output">
+                <textarea id="output-textbox" placeholder="Translation will appear here" style="resize: none" readonly></textarea>
+            </div>
+            <button class="save-button" id="save-translation-button">Save</button>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <form class="form">
+            <input id="search" type="text" class="input" placeholder="search..." />
+            <button id="clear" class="clear-results">clear</button>
+        </form>
+    </div>
+    <div class="results-container">
+        <ul class="results-list" id="list">
+
+        </ul>
+    </div>
+</body>
+</html>
