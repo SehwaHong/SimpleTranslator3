@@ -1,7 +1,7 @@
 /**
  * Fetches history data from the backend server and updates the DOM accordingly.
  */
-document.addEventListener('DOMContentLoaded', () => {
+ document.addEventListener('DOMContentLoaded', () => {
     fetchHistory();
 });
 
